@@ -14,7 +14,7 @@ dotenv.config({
 
 databaseConnection();
 
-//Listing.insertMany(initData);
+Listing.insertMany(initData);
 //Listing.deleteMany({});
 const app=express();
 

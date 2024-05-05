@@ -29,6 +29,9 @@ const listingSchema = new mongoose.Schema({
          type:String,
          require:true
        },
+       rating:{
+          type:Number,
+       },
        reviews:[{
           type:Schema.Types.ObjectId,
           ref:"Review",

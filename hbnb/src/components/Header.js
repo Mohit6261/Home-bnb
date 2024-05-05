@@ -13,6 +13,7 @@ import {useDispatch, useSelector} from "react-redux";
 import store from "../redux/store";
 import { setUser } from "../redux/userSlice";
 import { useState } from 'react';
+import { setsearch } from '../redux/searchSlice';
 
 
 
@@ -20,7 +21,7 @@ const Header = () => {
 
   
   const navigate=useNavigate()
-  const { globalValue } = useGlobal(); 
+  const { globalValue, setGlobalValue } = useGlobal();
   const user= useSelector((store) => store.app.user);
   const dispatch=useDispatch();
   const [showCountryList, setShowCountryList] = useState(false);
@@ -29,6 +30,8 @@ const Header = () => {
   const [selectedCities, setSelectedCities] = useState([]);
   const [index,setindex]=useState(null);
   const [chk,setchk]=useState(null);
+
+  
    //  const handleCountryClick = () => {
    //      setShowCountryList(!showCountryList);
    //  };
@@ -72,7 +75,9 @@ const searchByUser = async () => {
            "Content-Type": "application/json"
        },
        withCredentials: true});
+       dispatch(setsearch(res.data));
        console.log(res);
+       navigate("/searchresult");
        if(!res.data.success){
            toast.error(res.data.message);
        }
@@ -90,7 +95,7 @@ const searchByUser = async () => {
       },
       {
           name: "United States",
-          cities: ["California", "New York", "Pensylvenia"]
+          cities: ["Malibu", "New York", "Pensylvenia"]
       },
       {
           name: "Russia",
@@ -126,10 +131,14 @@ const searchByUser = async () => {
          toast.success(res.data.message);
          
       }
+      
       dispatch(setUser(null));
       // const socket = socketIOClient(`${API_END_POINT}`);
-      // socket.emit('logout');
-      navigate("/login");
+      // socket.emit('logout'
+      setGlobalValue(false);
+      window.location.reload();
+      navigate("/");
+      
     }catch(err){
        console.log(err);
     }

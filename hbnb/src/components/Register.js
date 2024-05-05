@@ -8,6 +8,7 @@ import { useGlobal } from './GlobalContext.js';
 import {useNavigate} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading, setUser } from "../redux/userSlice";
+import Header from "./Header.js";
 
 function Register() {
     //const passwordRules = /^(?=.\d)(?=.[a-z])(?=.*[A-Z]).{5,}$/;
@@ -55,6 +56,8 @@ function Register() {
     };
 
     return (
+        <>
+        <Header/>
         <div className="mt-4 grow flex items-center justify-around">
             <div className="mb-40">
                 <h1 className="text-4xl text-center">Register</h1>
@@ -114,6 +117,7 @@ function Register() {
                 </Formik>
             </div>
         </div>
+        </>
     );
 }
 

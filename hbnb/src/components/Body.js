@@ -8,6 +8,7 @@ import NewListing from "./NewListing.js";
 import Register from "./Register.js";
 import FavouriteListing from "./FavouriteListing.js";
 import Bookings from "./Bookings.js";
+import SearchResult from "./SearchResult.js";
 
 const Body = () => {
 
@@ -44,6 +45,10 @@ const Body = () => {
         {
             path:"/bookings",
             element:<Bookings/>
+        },
+        {
+            path:"/searchresult",
+            element:<SearchResult/>
         }
     ])
 

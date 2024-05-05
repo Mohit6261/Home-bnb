@@ -90,7 +90,7 @@ const Card = ({ card }) => {
     <div className="p-5">
         <span className='flex justify-between'>
             <h5 className="mb-1 font-bold text-black dark:text-white">{card.title}</h5>
-            <span> &#9733; 4.1</span>
+            <span> &#9733; {card.rating}</span>
         </span>
       
         <span >

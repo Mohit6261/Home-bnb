@@ -153,7 +153,7 @@ function LoginPage() {
       navigate("/");
 
     } catch (e) {
-      alert('Login failed');
+       toast.error("You are not registered yet,kindly register yourself");
     }
     finally{
       dispatch(setLoading(false));

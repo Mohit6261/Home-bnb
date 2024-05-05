@@ -43,7 +43,7 @@ const NewListing =  () => {
           }catch(err){
              console.log(err);
           }
-        }  
+        }
    }
   return (
    <>

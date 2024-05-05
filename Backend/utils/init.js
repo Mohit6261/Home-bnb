@@ -8,16 +8,18 @@ const sampleListings = [
       location: "Malibu",
       country: "United States",
       Hostname:"Adam",
+      rating:4,
     },
     {
       title: "Modern Loft in Downtown",
       description:
         "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
       image:  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-      price: 1,
+      price: 100,
       location: "New York City",
       country: "United States",
       Hostname:"Green",
+      rating:3,
     },
     {
       title: "Mountain Retreat",
@@ -28,6 +30,7 @@ const sampleListings = [
       location: "Aspen",
       country: "United States",
       Hostname:"Vale",
+      rating:2,
     },
     {
       title: "Historic Villa in Tuscany",
@@ -38,6 +41,7 @@ const sampleListings = [
       location: "Florence",
       country: "Italy",
       Hostname:"san",
+      rating:4.3,
     },
     {
       title: "Secluded Treehouse Getaway",
@@ -48,6 +52,7 @@ const sampleListings = [
       location: "Portland",
       country: "United States",
       Hostname:"Chris",
+      rating:4.2,
     },
     {
       title: "Beachfront Paradise",
@@ -58,6 +63,7 @@ const sampleListings = [
       location: "Cancun",
       country: "Mexico",
       Hostname:"Hela",
+      rating:3.5,
     },
     {
       title: "Rustic Cabin by the Lake",
@@ -68,6 +74,7 @@ const sampleListings = [
       location: "Lake Tahoe",
       country: "United States",
       Hostname:"Anderson",
+      rating:3.6,
     },
     {
       title: "Luxury Penthouse with City Views",
@@ -78,6 +85,7 @@ const sampleListings = [
       location: "Los Angeles",
       country: "United States",
       Hostname:"Biden",
+      rating:4.4,
     },
     {
       title: "Ski-In/Ski-Out Chalet",
@@ -88,6 +96,7 @@ const sampleListings = [
       location: "Verbier",
       country: "Switzerland",
       Hostname:"Soul",
+      rating:4.9,
     },
     {
       title: "Safari Lodge in the Serengeti",
@@ -98,6 +107,7 @@ const sampleListings = [
       location: "Serengeti National Park",
       country: "Tanzania",
       Hostname:"Biden",
+      rating:4,
     },
     {
       title: "Historic Canal House",
@@ -108,6 +118,7 @@ const sampleListings = [
       location: "Amsterdam",
       country: "Netherlands",
       Hostname:"Biden",
+      rating:4,
     },
     {
       title: "Private Island Retreat",
@@ -118,6 +129,7 @@ const sampleListings = [
       location: "Fiji",
       country: "Fiji",
       Hostname:"Biden",
+      rating:4,
     },
     {
       title: "Charming Cottage in the Cotswolds",
@@ -128,6 +140,7 @@ const sampleListings = [
       location: "Cotswolds",
       country: "United Kingdom",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Historic Brownstone in Boston",
@@ -138,6 +151,7 @@ const sampleListings = [
       location: "Boston",
       country: "United States",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Beachfront Bungalow in Bali",
@@ -148,6 +162,7 @@ const sampleListings = [
       location: "Bali",
       country: "Indonesia",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Mountain View Cabin in Banff",
@@ -158,6 +173,7 @@ const sampleListings = [
       location: "Banff",
       country: "Canada",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Art Deco Apartment in Miami",
@@ -168,6 +184,7 @@ const sampleListings = [
       location: "Miami",
       country: "United States",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Tropical Villa in Phuket",
@@ -178,6 +195,7 @@ const sampleListings = [
       location: "Phuket",
       country: "Thailand",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Historic Castle in Scotland",
@@ -188,6 +206,7 @@ const sampleListings = [
       location: "Scottish Highlands",
       country: "United Kingdom",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Desert Oasis in Dubai",
@@ -198,6 +217,7 @@ const sampleListings = [
       location: "Dubai",
       country: "United Arab Emirates",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Rustic Log Cabin in Montana",
@@ -208,6 +228,7 @@ const sampleListings = [
       location: "Montana",
       country: "United States",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Beachfront Villa in Greece",
@@ -218,6 +239,7 @@ const sampleListings = [
       location: "Mykonos",
       country: "Greece",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Eco-Friendly Treehouse Retreat",
@@ -229,6 +251,7 @@ const sampleListings = [
       location: "Costa Rica",
       country: "Costa Rica",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Historic Cottage in Charleston",
@@ -240,6 +263,7 @@ const sampleListings = [
       location: "Charleston",
       country: "United States",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Modern Apartment in Tokyo",
@@ -251,7 +275,7 @@ const sampleListings = [
       location: "Tokyo",
       country: "Japan",
       Hostname:"Biden",
-
+      rating:4.5,
     },
     {
       title: "Lakefront Cabin in New Hampshire",
@@ -264,6 +288,7 @@ const sampleListings = [
       location: "New Hampshire",
       country: "United States",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Luxury Villa in the Maldives",
@@ -276,6 +301,7 @@ const sampleListings = [
       location: "Maldives",
       country: "Maldives",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Ski Chalet in Aspen",
@@ -288,6 +314,7 @@ const sampleListings = [
       location: "Aspen",
       country: "United States",
       Hostname:"Biden",
+      rating:4.5,
     },
     {
       title: "Secluded Beach House in Costa Rica",
@@ -299,6 +326,7 @@ const sampleListings = [
       location: "Costa Rica",
       country: "Costa Rica",
       Hostname:"Biden",
+      rating:4.5,
     },
   ];
   

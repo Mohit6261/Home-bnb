@@ -177,6 +177,7 @@ const postReview = async(e) => {
           if(res.data.success){
              toast.success(res.data.message);
           }
+          window.location.reload();
 
        }catch(err){
           console.log(err);
